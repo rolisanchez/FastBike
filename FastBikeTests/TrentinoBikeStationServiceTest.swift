@@ -8,7 +8,7 @@ class TrentinoBikeStationServiceTest: XCTestCase {
         let service = TrentinoBikeStationService(url: URL(string: "foo")!)
         service.getStations(delegate: controller)
 
-        service.populateBikeStations(with: [])
+//        service.populateBikeStations(with: [])
         
         XCTAssert(controller.setBikeStationsCalled)
     }
