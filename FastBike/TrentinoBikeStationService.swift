@@ -10,18 +10,23 @@ class TrentinoBikeStationService: BikeStationService {
     }
 
     func getStations(delegate: BikeStationServiceDelegate) {
+        print("getStations")
+
         self.delegate = delegate
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let task = session.dataTask(with: url, completionHandler: self.handleResponse)
         task.resume()
     }
 
-    private func handleResponse(data: Data?, response: URLResponse?, error: Error?){
-        switch (data, response, error){
+    private func handleResponse(data: Data?, response: URLResponse?, error: Error?) {
+        print("handleResponse")
+        switch (data, response, error) {
         case let (_, _, error?):
-                print(error.localizedDescription)
+            print("error = ", error.localizedDescription)
+            self.delegate?.set(bikeStations: [])
             
-        case let (data?, response?, _) where self.isSuccess(response: response) :
+        case let (data?, response?, _) where self.isSuccess(response: response):
+            print("isSuccess")
             if let stations = try? JSONDecoder().decode([BikeStationNew].self, from: data) {
                 let legacyStations = stations.compactMap { BikeStation(bikeStationNew: $0) }
                 self.delegate?.set(bikeStations: legacyStations)

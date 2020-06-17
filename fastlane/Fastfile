@@ -21,4 +21,8 @@ platform :ios do
     build_app(scheme: "FastBike")
     upload_to_app_store
   end
+  desc "Run our tests"
+  lane :tests do
+    run_tests(scheme: "FastBikeTests")
+  end
 end

@@ -47,6 +47,16 @@
                ReferencedContainer = "container:FastBike.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DBA9B5102497C6DF00DEDEFD"
+               BuildableName = "FastBikeUITests.xctest"
+               BlueprintName = "FastBikeUITests"
+               ReferencedContainer = "container:FastBike.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

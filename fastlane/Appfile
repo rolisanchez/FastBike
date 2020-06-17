@@ -1,8 +1,8 @@
-app_identifier("com.tm.FastBike.app") # The bundle identifier of your app
-apple_id("t.martinho@live.com.pt") # Your Apple email address
+app_identifier("com.vrsj.FastBike.app") # The bundle identifier of your app
+apple_id("roli.s91@gmail.com") # Your Apple email address
 
-itc_team_id("117874374") # App Store Connect Team ID
-team_id("4C34FT6ABU") # Developer Portal Team ID
+itc_team_id("117853443") # App Store Connect Team ID
+team_id("3GGDA583PP") # Developer Portal Team ID
 
 # For more information about the Appfile, see:
 #     https://docs.fastlane.tools/advanced/#appfile

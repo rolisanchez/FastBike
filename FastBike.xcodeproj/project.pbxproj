@@ -19,6 +19,7 @@
 		24893BA421EFB1CB00EF9F76 /* BikeStationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24893BA321EFB1CB00EF9F76 /* BikeStationTest.swift */; };
 		95BA99001D8C6F73005905FB /* BikeStationFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840DE1D88159000BCE287 /* BikeStationFinderTests.swift */; };
 		C554DDA81D887DAB00D75679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C554DDA71D887DAB00D75679 /* Assets.xcassets */; };
+		DBA9B5142497C6DF00DEDEFD /* FastBikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9B5132497C6DF00DEDEFD /* FastBikeUITests.swift */; };
 		EA04C82B1D8839FB00C98C41 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA04C82A1D8839FB00C98C41 /* MapKit.framework */; };
 		EA04C82D1D884FB800C98C41 /* BikeStationFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C82C1D884FB800C98C41 /* BikeStationFinder.swift */; };
 		EA04C82F1D88528600C98C41 /* TrentinoBikeStationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C82E1D88528600C98C41 /* TrentinoBikeStationService.swift */; };
@@ -48,6 +49,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		245CCA6A21B83DF30094E5CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA2840BE1D88159000BCE287 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA2840C51D88159000BCE287;
+			remoteInfo = FastBike;
+		};
+		DBA9B5162497C6DF00DEDEFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EA2840BE1D88159000BCE287 /* Project object */;
 			proxyType = 1;
@@ -116,6 +124,9 @@
 		24893BA121EFAF5C00EF9F76 /* BikeStationMKAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationMKAnnotation.swift; sourceTree = "<group>"; };
 		24893BA321EFB1CB00EF9F76 /* BikeStationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationTest.swift; sourceTree = "<group>"; };
 		C554DDA71D887DAB00D75679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBA9B5112497C6DF00DEDEFD /* FastBikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastBikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA9B5132497C6DF00DEDEFD /* FastBikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastBikeUITests.swift; sourceTree = "<group>"; };
+		DBA9B5152497C6DF00DEDEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA04C82A1D8839FB00C98C41 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EA04C82C1D884FB800C98C41 /* BikeStationFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeStationFinder.swift; sourceTree = "<group>"; };
 		EA04C82E1D88528600C98C41 /* TrentinoBikeStationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrentinoBikeStationService.swift; sourceTree = "<group>"; };
@@ -157,6 +168,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5DA09994C52514DDB58BC668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA9B50E2497C6DF00DEDEFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,6 +225,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DBA9B5122497C6DF00DEDEFD /* FastBikeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9B5132497C6DF00DEDEFD /* FastBikeUITests.swift */,
+				DBA9B5152497C6DF00DEDEFD /* Info.plist */,
+			);
+			path = FastBikeUITests;
+			sourceTree = "<group>";
+		};
 		EA04C8401D88894000C98C41 /* FastBikeWatchOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +266,7 @@
 				EA04C8401D88894000C98C41 /* FastBikeWatchOS */,
 				EA04C84F1D88894000C98C41 /* FastBikeWatchOS Extension */,
 				245CCA6621B83DF30094E5CC /* IntegrationTests */,
+				DBA9B5122497C6DF00DEDEFD /* FastBikeUITests */,
 				EA2840C71D88159000BCE287 /* Products */,
 				8D9AAC3DA767BC4862B5ACE0 /* Frameworks */,
 			);
@@ -252,6 +280,7 @@
 				EA04C83F1D88894000C98C41 /* FastBikeWatchOS.app */,
 				EA04C84B1D88894000C98C41 /* FastBikeWatchOS Extension.appex */,
 				245CCA6521B83DF30094E5CC /* IntegrationTests.xctest */,
+				DBA9B5112497C6DF00DEDEFD /* FastBikeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -322,6 +351,24 @@
 			productName = IntegrationTests;
 			productReference = 245CCA6521B83DF30094E5CC /* IntegrationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DBA9B5102497C6DF00DEDEFD /* FastBikeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA9B5182497C6DF00DEDEFD /* Build configuration list for PBXNativeTarget "FastBikeUITests" */;
+			buildPhases = (
+				DBA9B50D2497C6DF00DEDEFD /* Sources */,
+				DBA9B50E2497C6DF00DEDEFD /* Frameworks */,
+				DBA9B50F2497C6DF00DEDEFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBA9B5172497C6DF00DEDEFD /* PBXTargetDependency */,
+			);
+			name = FastBikeUITests;
+			productName = FastBikeUITests;
+			productReference = DBA9B5112497C6DF00DEDEFD /* FastBikeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		EA04C83E1D88894000C98C41 /* FastBikeWatchOS */ = {
 			isa = PBXNativeTarget;
@@ -401,24 +448,30 @@
 		EA2840BE1D88159000BCE287 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = tm;
 				TargetAttributes = {
 					245CCA6421B83DF30094E5CC = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 4C34FT6ABU;
+						DevelopmentTeam = 3GGDA583PP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA2840C51D88159000BCE287;
+					};
+					DBA9B5102497C6DF00DEDEFD = {
+						CreatedOnToolsVersion = 11.5;
+						DevelopmentTeam = 3GGDA583PP;
 						ProvisioningStyle = Automatic;
 						TestTargetID = EA2840C51D88159000BCE287;
 					};
 					EA04C83E1D88894000C98C41 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4C34FT6ABU;
+						DevelopmentTeam = 3GGDA583PP;
 						ProvisioningStyle = Automatic;
 					};
 					EA04C84A1D88894000C98C41 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4C34FT6ABU;
+						DevelopmentTeam = 3GGDA583PP;
 						LastSwiftMigration = 1150;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -429,7 +482,7 @@
 					};
 					EA2840C51D88159000BCE287 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4C34FT6ABU;
+						DevelopmentTeam = 3GGDA583PP;
 						LastSwiftMigration = 1150;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -440,7 +493,7 @@
 					};
 					EA2840D91D88159000BCE287 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = NX6S46A5Z4;
+						DevelopmentTeam = 3GGDA583PP;
 						LastSwiftMigration = 1150;
 						ProvisioningStyle = Automatic;
 						TestTargetID = EA2840C51D88159000BCE287;
@@ -465,12 +518,20 @@
 				EA04C83E1D88894000C98C41 /* FastBikeWatchOS */,
 				EA04C84A1D88894000C98C41 /* FastBikeWatchOS Extension */,
 				245CCA6421B83DF30094E5CC /* IntegrationTests */,
+				DBA9B5102497C6DF00DEDEFD /* FastBikeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		245CCA6321B83DF30094E5CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA9B50F2497C6DF00DEDEFD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -519,6 +580,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				245CCA6821B83DF30094E5CC /* IntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA9B50D2497C6DF00DEDEFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA9B5142497C6DF00DEDEFD /* FastBikeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +646,11 @@
 			target = EA2840C51D88159000BCE287 /* FastBike */;
 			targetProxy = 245CCA6A21B83DF30094E5CC /* PBXContainerItemProxy */;
 		};
+		DBA9B5172497C6DF00DEDEFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA2840C51D88159000BCE287 /* FastBike */;
+			targetProxy = DBA9B5162497C6DF00DEDEFD /* PBXContainerItemProxy */;
+		};
 		EA04C84E1D88894000C98C41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EA04C84A1D88894000C98C41 /* FastBikeWatchOS Extension */;
@@ -632,7 +706,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = 3GGDA583PP;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = IntegrationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -657,7 +731,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = 3GGDA583PP;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = IntegrationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -671,15 +745,60 @@
 			};
 			name = Release;
 		};
+		DBA9B5192497C6DF00DEDEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GGDA583PP;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FastBikeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrsj.FastBikeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FastBike;
+			};
+			name = Debug;
+		};
+		DBA9B51A2497C6DF00DEDEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GGDA583PP;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FastBikeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrsj.FastBikeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FastBike;
+			};
+			name = Release;
+		};
 		EA04C85C1D88894000C98C41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = 3GGDA583PP;
 				IBSC_MODULE = FastBikeWatchOS_Extension;
 				INFOPLIST_FILE = FastBikeWatchOS/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.app.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrsj.FastBike.app.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -693,10 +812,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = 3GGDA583PP;
 				IBSC_MODULE = FastBikeWatchOS_Extension;
 				INFOPLIST_FILE = FastBikeWatchOS/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.app.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrsj.FastBike.app.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -709,10 +828,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = 3GGDA583PP;
 				INFOPLIST_FILE = "FastBikeWatchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.app.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrsj.FastBike.app.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -726,10 +845,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = 3GGDA583PP;
 				INFOPLIST_FILE = "FastBikeWatchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.app.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrsj.FastBike.app.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -860,10 +979,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = 3GGDA583PP;
 				INFOPLIST_FILE = FastBike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrsj.FastBike.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FastBike/FastBike-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -877,10 +996,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = 3GGDA583PP;
 				INFOPLIST_FILE = FastBike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrsj.FastBike.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FastBike/FastBike-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -892,7 +1011,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = NX6S46A5Z4;
+				DEVELOPMENT_TEAM = 3GGDA583PP;
 				INFOPLIST_FILE = FastBikeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBikeTests;
@@ -908,7 +1027,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = NX6S46A5Z4;
+				DEVELOPMENT_TEAM = 3GGDA583PP;
 				INFOPLIST_FILE = FastBikeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBikeTests;
@@ -927,6 +1046,15 @@
 			buildConfigurations = (
 				245CCA6C21B83DF30094E5CC /* Debug */,
 				245CCA6D21B83DF30094E5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA9B5182497C6DF00DEDEFD /* Build configuration list for PBXNativeTarget "FastBikeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA9B5192497C6DF00DEDEFD /* Debug */,
+				DBA9B51A2497C6DF00DEDEFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
