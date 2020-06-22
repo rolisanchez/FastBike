@@ -15,7 +15,6 @@ class TrentinoBikeStationServiceFactory {
     ]
 
     private static let baseEndpoint = "https://os.smartcommunitylab.it/core.mobility/bikesharing/"
-
     static func get() -> [BikeStationService] {
         return endpoints
             .compactMap { URL(string: "\(baseEndpoint)\($0)") }

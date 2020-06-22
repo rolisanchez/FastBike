@@ -3,15 +3,14 @@ import Foundation
 class TrentinoBikeStationService: BikeStationService {
 
     private let url: URL
-    private weak var delegate: BikeStationServiceDelegate?
+    private var delegate: BikeStationServiceDelegate?
 
     init(url:URL) {
+        print("url is \(url)")
         self.url = url
     }
 
     func getStations(delegate: BikeStationServiceDelegate) {
-        print("getStations")
-
         self.delegate = delegate
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let task = session.dataTask(with: url, completionHandler: self.handleResponse)
@@ -19,17 +18,19 @@ class TrentinoBikeStationService: BikeStationService {
     }
 
     private func handleResponse(data: Data?, response: URLResponse?, error: Error?) {
-        print("handleResponse")
+        
         switch (data, response, error) {
         case let (_, _, error?):
-            print("error = ", error.localizedDescription)
             self.delegate?.set(bikeStations: [])
-            
+            print("Error = \(error.localizedDescription)")
         case let (data?, response?, _) where self.isSuccess(response: response):
-            print("isSuccess")
             if let stations = try? JSONDecoder().decode([BikeStationNew].self, from: data) {
                 let legacyStations = stations.compactMap { BikeStation(bikeStationNew: $0) }
                 self.delegate?.set(bikeStations: legacyStations)
+                print("Got \(legacyStations.count) bikes from URL")
+            } else {
+                self.delegate?.set(bikeStations: [])
+                print("Could not get bikes from URL")
             }
         default:
             print("unhandled case")
@@ -43,4 +44,5 @@ class TrentinoBikeStationService: BikeStationService {
         
         return false
     }
+    
 }
